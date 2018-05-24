@@ -60,7 +60,7 @@ class Subscription<T: AnyObject, U> : Invocable, Disposable
     
     func invoke(_ data: Any) {
         if let t = target {
-            handler(t)(data as! U) // handler -> hanle() (t -> creature modifier) (data -> query)
+            handler(t)(data as! U) // handler -> handle() (t -> creature modifier) (data -> query)
         }
     }
     
